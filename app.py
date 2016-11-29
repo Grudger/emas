@@ -3,7 +3,7 @@ import pymongo
 import time
 from bson.json_util import dumps
 from json import loads
-client = pymongo.MongoClient('192.168.1.101', 2019)
+client = pymongo.MongoClient('192.168.1.109', 2019)
 db = client.emas
 stream = db.stream
 avg =  db.avg
@@ -11,7 +11,7 @@ avg =  db.avg
 
 
 def data():
-    fullData = stream.find({},{'_id': 0}).sort('_id',pymongo.DESCENDING)
+    fullData = stream.find({},{'_id': 0}).sort('_id',pymongo.ASCENDING)
     json = dumps(fullData)
     return loads(json)
 
@@ -48,12 +48,12 @@ def volt3():
 
 
 def time():
-    time = stream.find({},{'time': 1,'_id': 0}).limit(50).sort('_id',pymongo.DESCENDING)
+    time = stream.find({},{'time': 1,'_id': 0}).limit(50).sort('_id',pymongo.ASCENDING)
     json = dumps(time)
     return loads(json)
 
 def pred():
-    pred = avg.find({}).sort('_id',pymongo.DESCENDING)
+    pred = avg.find({}).sort('_id',pymongo.ASCENDING)
     json = dumps(pred)
     return loads(json)
 
