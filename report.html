@@ -43,6 +43,7 @@
             <li><a href="loadTwo.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Device Two</a></li>
             <li class="active"><a href="loadThree.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Device Three</a></li>
             <li><a href="prediction.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Bill</a></li>
+            <li><a href="report.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Report</a></li>
         </ul>
 
     </div><!--/.sidebar-->
@@ -67,6 +68,28 @@
             <canvas id="load-three" height="250" width="600"></canvas>
 	    </div>
     </div>
+    
+                
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Advanced Table</div>
+                    <div class="panel-body">
+                        <table data-toggle="table" data-url="tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+                            <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true" >Item ID</th>
+                                <th data-field="id" data-sortable="true">Item ID</th>
+                                <th data-field="name"  data-sortable="true">Item Name</th>
+                                <th data-field="price" data-sortable="true">Item Price</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.row-->  
 </div>
 </div>
 </div>
@@ -75,6 +98,7 @@
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script src="../assets/js/bootstrap-table.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 <script>
 $('.input-daterange input').each(function() {
