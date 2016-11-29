@@ -1,0 +1,658 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"A",
+				"ASCENDING\tstatement"
+			],
+			[
+				"pred",
+				"prediciton"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"volt",
+				"volt3Val"
+			],
+			[
+				"setLo",
+				"setLoad1"
+			],
+			[
+				"respo",
+				"responseText"
+			],
+			[
+				"vol",
+				"volt1"
+			],
+			[
+				"re",
+				"responseText"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Grudger/Desktop/FYP_mat/REPORT PLAN",
+			"settings":
+			{
+				"buffer_size": 6342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Grudger/Desktop/FYP_mat/references.txt",
+			"settings":
+			{
+				"buffer_size": 445,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Downloads/Microsoft Office Project Pro 2007 v12.0.4518.1014 + Key [RH]/Microsoft Office Project Professional 2007 v12.0.4518/README.HTM",
+			"settings":
+			{
+				"buffer_size": 2436,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Grudger/Desktop/FYP_mat/Preface",
+			"settings":
+			{
+				"buffer_size": 883,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "The  main  method  of  testing  throughout  the  design  of  the  project  was  to  establish  that  each \nindividual class was performing as expected. In order to facilitate this, each class implements its own main method and can be executed independently of the rest of the system. This is to ensure that each component works before tyi\nng them together. In addition, a number of print statements  have  been  prepared  at  different  points  throughout  the  program  to  help  locate failures  when  the  program  had  been  integrated  and  the  complex  threads  of  execution  were difficult to follow.\nIn addition to main methods being created, a number of test classes were created to ensure \ncorrect operation prior to the final compilation of the code.",
+			"settings":
+			{
+				"buffer_size": 763,
+				"line_ending": "Windows",
+				"name": "The  main  method  of  testing  throughout  the  d"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"last_filter": "livere",
+		"selected_items":
+		[
+			[
+				"livere",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"live",
+				"Snippet: Insert livereload.js script"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Grudger/Desktop/project_emas"
+	],
+	"file_history":
+	[
+		"/C/Users/Grudger/Desktop/project_emas/loadOne.html",
+		"/C/Users/Grudger/Desktop/project_emas/app.py",
+		"/C/Users/Grudger/Desktop/project_emas/assets/js/lumino.glyphs.js",
+		"/C/Users/Grudger/Desktop/project_emas/prediction.html",
+		"/C/Users/Grudger/Desktop/project_emas/experimnt.py",
+		"/C/Users/Grudger/Desktop/project_emas/index.html",
+		"/C/Users/Grudger/Desktop/project_emas/loadTwo.html",
+		"/C/Users/Grudger/Desktop/project_emas/loadThree.html",
+		"/C/Users/Grudger/Desktop/project_emas/access/index.html",
+		"/C/Users/Grudger/Desktop/project_emas/assets/js/chart.min.js",
+		"/C/Users/Grudger/Desktop/project_emas/access/panels.html",
+		"/C/Users/Grudger/Desktop/project_emas/access/forms.html",
+		"/C/Users/Grudger/Desktop/project_emas/access/tables.html",
+		"/C/Users/Grudger/Desktop/project_emas/access/widgets.html",
+		"/C/Users/Grudger/Desktop/project_emas/access/charts.html",
+		"/C/Users/Grudger/Desktop/project_emas/listen.py",
+		"/C/Users/Grudger/Desktop/project_emas/assets/js/chart-data.js",
+		"/C/Users/Grudger/Desktop/project_emas/assets/js/easypiechart.js",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/.sublime/Local History/C/Users/Grudger/Desktop/project_emas/experimnt-20161023095227.py",
+		"/C/Users/Grudger/Desktop/project_emas/pic.html",
+		"/C/Users/Grudger/Desktop/project_emas/speculation.py",
+		"/C/Users/Grudger/Desktop/project_emas/ajax/allData.py",
+		"/C/Users/Grudger/Desktop/project_emas/hh/__init__.py",
+		"/C/Users/Grudger/Desktop/project_emas/experiment for 3/py3 series.py",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/.sublime/Local History/C/Users/Grudger/Desktop/project_emas/pic-20161023095825.html",
+		"/C/Users/Grudger/Desktop/project_emas/example.py",
+		"/C/Users/Grudger/Desktop/project_emas/assets/longJs.js",
+		"/C/Python27/Lib/site-packages/pico/client.js",
+		"/C/Python27/Lib/site-packages/pico/client.py",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/.sublime/Local History/C/Users/Grudger/Desktop/project_emas/pic-20161023021541.html",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/Packages/User/LocalHistory.sublime-settings",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/Packages/Local History/settings/LocalHistory.sublime-settings",
+		"/C/Users/Grudger/Desktop/project_emas/data.json",
+		"/C/Users/Grudger/Desktop/Analytics_Vidhya-master/Analytics_Vidhya-master/Articles/Time_Series_Analysis/Time_Series_AirPassenger.ipynb",
+		"/C/Users/Grudger/Desktop/project_emas/jsonsamp.json",
+		"/O/time_series.py",
+		"/C/Users/Grudger/Desktop/project/data.json",
+		"/C/Users/Grudger/Desktop/project/pic.html",
+		"/C/Users/Grudger/Desktop/project/index.html",
+		"/C/Users/Grudger/Desktop/project/app.py",
+		"/C/Users/Grudger/Desktop/project/listen.py",
+		"/C/Users/Grudger/Desktop/project/example.py",
+		"/C/Users/Grudger/Desktop/project/ajax/allData.py",
+		"/C/Users/Grudger/Desktop/project/assets/js/pico.js",
+		"/C/Users/Grudger/Desktop/project/final_with_load.json",
+		"/C/Users/Grudger/Desktop/project/tables.html",
+		"/C/Users/Grudger/Desktop/project/widgets.html",
+		"/C/Users/Grudger/Desktop/project/panels.html",
+		"/C/Users/Grudger/Desktop/project/charts.html",
+		"/C/Users/Grudger/Desktop/project/forms.html",
+		"/C/Users/Grudger/Desktop/project/icons.html",
+		"/C/Users/Grudger/Desktop/project/login.html",
+		"/C/Users/Grudger/Desktop/project/assets/css/main.css",
+		"/C/Users/Grudger/Desktop/Sublime text/Data/Packages/Open/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"asse",
+			"=\"asset",
+			"=\"ass",
+			"f=\"asset",
+			"md-4",
+			"=\"asse",
+			"avg",
+			"var ",
+			"\n    var etime = (new Date(time[time.length-1]).getHours())\n    var btime = (new Date(time[0]).getHours())",
+			"avgLoad",
+			"console.log(",
+			"load1Avg =",
+			"350",
+			"24 col-md-6",
+			"350",
+			"24 col-md-6",
+			"1",
+			"grades",
+			"time",
+			"DESCENDING",
+			"data",
+			"time",
+			"200",
+			" col-md-4",
+			" col-md-4 ",
+			"line-chart",
+			"Val",
+			"load1Val",
+			"db.stream",
+			"load",
+			"load1",
+			"cur1",
+			"cur2",
+			"time",
+			"DECENDING",
+			"ASCENDING",
+			"{ $natural: 1 } );",
+			".limit(50)",
+			"volt3",
+			".sort()",
+			".limit(50)",
+			"myCallback",
+			"main",
+			"chartData",
+			"volt1",
+			"volt",
+			"cur",
+			"Cur",
+			"cur",
+			"Cur",
+			"cur",
+			"Cur1",
+			"cur1",
+			"volt3",
+			"volt1",
+			"cur",
+			"cur1",
+			"setCur",
+			"cur1",
+			"cur",
+			"setcur",
+			"load",
+			"cur12",
+			"load1",
+			"load12",
+			"json2",
+			"load12",
+			"json",
+			"cur1",
+			"'time': 800",
+			"1",
+			" app.volt2()",
+			"(5)",
+			"50",
+			"jsonParse(",
+			"phaseCur3",
+			"));",
+			"\n           var chartData1 =  app.volt1())",
+			"220",
+			" 0})",
+			"0",
+			",'time': 1",
+			".sort({time:-1}).limit(50)",
+			"phasecur",
+			"volt",
+			"Volt",
+			"volt",
+			"Volt",
+			"volt",
+			"Volt",
+			"volt",
+			"Volt",
+			"volt",
+			"Volt",
+			"volt",
+			"date",
+			"\"js/",
+			"\"css/",
+			"\"js/",
+			"\"css/",
+			"\"js/",
+			"\"css/",
+			"\"js/",
+			"href=\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Grudger/Desktop/FYP_mat/REPORT PLAN",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6342,
+								6342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 737.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Grudger/Desktop/FYP_mat/references.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Downloads/Microsoft Office Project Pro 2007 v12.0.4518.1014 + Key [RH]/Microsoft Office Project Professional 2007 v12.0.4518/README.HTM",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								850,
+								850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 361.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Grudger/Desktop/FYP_mat/Preface",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								883,
+								883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								763,
+								763
+							]
+						],
+						"settings":
+						{
+							"auto_name": "The  main  method  of  testing  throughout  the  d",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"panels",
+				"access\\panels.html"
+			],
+			[
+				"forms",
+				"access\\forms.html"
+			],
+			[
+				"tables",
+				"access\\tables.html"
+			],
+			[
+				"charts",
+				"access\\charts.html"
+			],
+			[
+				"wid",
+				"access\\widgets.html"
+			],
+			[
+				"cha",
+				"assets\\js\\chart-data.js"
+			],
+			[
+				"chart",
+				"assets\\js\\easypiechart.js"
+			],
+			[
+				"inde",
+				"access\\index.html"
+			],
+			[
+				"index",
+				"access\\index.html"
+			],
+			[
+				"exper",
+				"experimnt.py"
+			],
+			[
+				"ex",
+				"example.py"
+			],
+			[
+				"pic",
+				"pic.html"
+			],
+			[
+				"char.js",
+				"assets\\js\\chart.min.js"
+			],
+			[
+				"log",
+				"assets\\longJs.js"
+			],
+			[
+				"char",
+				"assets\\js\\chart-data.js"
+			],
+			[
+				"pic.",
+				"pic.html"
+			],
+			[
+				"data",
+				"data.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 177.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

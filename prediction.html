@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Pico Example</title>
+    <script src="/pico/client.js"></script>
+    <script>
+        pico.load("app");
+    </script>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/datepicker3.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="assets/js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>Energy Monitoring </span>And Speculation</a>
+            </div>
+                            
+        </div><!-- /.container-fluid -->
+    </nav>
+        
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        
+        <ul class="nav menu">
+            <li><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Main Dashboard</a></li>
+            <li><a href="loadOne.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Device One</a></li>
+            <li><a href="loadTwo.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Device Two</a></li>
+            <li><a href="loadThree.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Device Three</a></li>
+            <li class="active"><a href="prediction.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Bill</a></li>
+        </ul>
+
+    </div><!--/.sidebar-->
+        
+<div class="container">
+            
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">    
+    <hr>
+    <div class="row">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-blue panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-5 widget-left">
+                        <svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
+                    </div>
+                    <div class="col-sm-9 col-lg-7 widget-right">
+                        <div class="large"  ><span id="load1Avg"></span> KWH</div>
+                        <div class="text-muted">Device One Average</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-orange panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-5 widget-left">
+                        <svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
+                    </div>
+                    <div class="col-sm-9 col-lg-7 widget-right">
+                        <div class="large"  ><span id="load2Avg"></span> KWH</div>
+                        <div class="text-muted">Device Two Average</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="panel panel-teal panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-5 widget-left">
+                        <svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
+                    </div>
+                    <div class="col-sm-9 col-lg-7 widget-right">
+                        <div class="large"  ><span id="load3Avg"></span> KWH</div>
+                        <div class="text-muted">Device Three Average</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+    <div class="row">
+        <div class="col-xs-24">
+            <div class="input-group">
+              <input type="text" class="form-control input-lg" id="unit" placeholder="Enter Unit Rate">
+              <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button" id="bilBtn">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+            <hr>
+        </div>
+    </div>
+        <div class="row">    
+
+        <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            
+            <div class="panel panel-red panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-5 widget-left">
+                        <svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
+                    </div>
+                    <div class="col-sm-9 col-lg-7 widget-right">
+                        <div class="large"  id="ovrBill"></div>
+                        <div class="text-muted">Overall Bill</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <canvas id="load-pred" height="350" width="600"></canvas>
+        </div>
+    </div>
+</div>
+</div>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+<script>
+    var cur1 = [];
+    var cur2 = [];
+    var cur3 = [];
+    var volt1 = [];
+    var volt2 = [];
+    var volt3 = [];
+    var load1 = [];
+    var load2 = [];
+    var load3 = [];
+    var time = [];
+    var dateVal = [];
+    var data = [];
+    var predIct = [];
+    var load1Avg = 0;
+    var load2Avg = 0;
+    var load3Avg = 0;
+    var predAvg = 0;
+    var total = 0;
+    var etime = (new Date(time[time.length-1]).getHours());
+    var btime = (new Date(time[0]).getHours());
+    var prmptVal= 1;
+    var calBill= 0;
+
+    var PredictionData = {
+        labels: dateVal,
+        datasets: [{
+            label: "Load Predition",
+            data: predIct,
+            backgroundColor: "#FF6384"
+        },{
+            label: "Load One Value",
+            data: load1,
+            backgroundColor: "#4860C5",
+            fill: false,
+            borderJoinStyle: 'miter',
+        } ,{
+            label: "Load Two Value",
+            data: load2,
+            backgroundColor: "#4BC0C0",
+            fill: false,
+            lineTension: 0.1
+        },{
+            label: "Load Three Value",
+            data: load3,
+            backgroundColor: "#FFCE56",
+            fill: false,
+            lineTension: 0.1
+        } ]
+
+    }
+
+    var bill = function(){
+    }
+    $('#bilBtn').click(function(){
+        prmptVal =  parseInt($('#unit').val()) ;
+        var x = (load1Avg * 3) * prmptVal;
+        $('#ovrBill').html(x.toFixed(2));
+    });
+
+    var avgLoad = function(load){ 
+        total = 0
+        for(var i = 0; i < load.length; i++) {
+            total += load[i];
+        }
+         kwh = ((total / load.length) * (etime - btime))/1000 ;
+         return (kwh.toFixed(4));
+    }
+
+    var calculateAvg = function(){
+
+       etime = new Date(time[time.length-1]).getHours();
+       btime = new Date(time[0]).getHours();
+       load1Avg = avgLoad(load1);
+       load2Avg = avgLoad(load2);
+       load3Avg = avgLoad(load3);
+       calBill = bill();
+        $('#load1Avg').html(load1Avg);
+        $('#load2Avg').html(load2Avg);
+        $('#load3Avg').html(load3Avg);
+    }
+    var prediciton = function(myJson) {
+        var something = jQuery.parseJSON(JSON.stringify(myJson));
+            for (var i in something) {
+                predIct.push(something[i].pred);
+            }
+    }
+    var drawChart = function(  ) {
+        window.myLine = new Chart($("#load-pred"), {
+            type: "bar",
+            data: PredictionData,
+            responsive: true
+        });
+        calculateAvg();
+    }
+ 
+    pico.main = function() {
+            app.pred(prediciton);
+
+        var setdata = function(myJson) {
+
+            data = jQuery.parseJSON(JSON.stringify(myJson));
+            for (var i in data) {
+                time.push(data[i].time);
+                dateVal.push(data[i].time);
+                volt3.push(data[i].volt3);
+                volt1.push(data[i].volt1);
+                volt2.push(data[i].volt2);
+                cur3.push(data[i].cur3);
+                cur2.push(data[i].cur2);
+                cur1.push(data[i].cur1);
+                load1.push(data[i].cur1 * data[i].volt1);
+                load2.push(data[i].cur2 * data[i].volt2);
+                load3.push(data[i].cur3 * data[i].volt3);
+            }
+            drawChart();
+        };
+
+        var displayMessage = function(message) {
+            document.getElementById('message').innerHTML = JSON.stringify(message);
+        }
+
+        var chr = app.data(setdata);
+
+
+    }
+</script>
+</body>
+</html>
